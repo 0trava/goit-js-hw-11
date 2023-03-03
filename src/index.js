@@ -12,6 +12,7 @@ const MY_API_KEY = '33995663-3283b38da6c47940fd5e67885'; // мій персон�
 const BASE_URL = 'https://pixabay.com/api/';
 let page = 1;
 let PHOTO_NAME ="";
+let totalHits = 0;
 let stopPage = 1;
 // Підключаємось до данних сторінки index.html
 const refs = {
@@ -35,8 +36,8 @@ function onFormSubmit (evt){
     
     evt.preventDefault(); // відміна перезавантаження сторінки
     const name = refs.input.value.trim(); // редагуємо текст, прибираємо пробіли
-    // PHOTO_NAME = name;
-    // totalHits = 0;
+    PHOTO_NAME = name;
+    totalHits = 0;
     refs.gallery.innerHTML = ''; // очищення попереднього вмісту галереї
     page = 1;
     
