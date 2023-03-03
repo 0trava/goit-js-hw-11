@@ -36,7 +36,7 @@ function onFormSubmit (evt){
     evt.preventDefault(); // відміна перезавантаження сторінки
     const name = refs.input.value.trim(); // редагуємо текст, прибираємо пробіли
     // PHOTO_NAME = name;
-    totalHits = 0;
+    // totalHits = 0;
     refs.gallery.innerHTML = ''; // очищення попереднього вмісту галереї
     page = 1;
     
